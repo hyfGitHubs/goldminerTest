@@ -1,0 +1,103 @@
+body{
+    width: 1910px;
+    height: 955px;
+    background-image: url(img/bodybg.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+#cvs{
+    border: solid 1px;
+    position: absolute;
+    left: 300px;
+    top: 100px;
+    background-image: url(img/bg1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#start{
+    margin: auto;
+    width: 1000px;
+    height: 800px;
+    display: block;
+    position: absolute;
+}
+#game{
+    position: absolute;
+    margin: auto;
+
+    display: none;
+}
+#end{
+    margin: auto;
+    width: 1000px;
+    height: 800px;
+    display: none;
+    position: absolute;
+
+}
+#cvsstart{
+    border: solid 1px;
+    position: absolute;
+    left: 300px;
+    top: 100px;
+    background-image: url(img/begin.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#startbt{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 500px;
+    top: 500px;
+}
+#title{
+    position: absolute;
+    left: 550px;
+    top: 150px;
+    opacity: 0;
+    animation:see 2s;
+    animation-iteration-count: infinite;
+}
+#rules{
+    position: absolute;
+    left: 1350px;
+    top: 150px;
+}
+#rule{
+    position: absolute;
+    left: 1502px;
+    top: 100px;
+    width: 300px;
+    height: 450px;
+    background-color:greenyellow;
+    opacity: 0.8;
+    display: none;
+}
+#cvsend{
+    border: solid 1px;
+    position: absolute;
+    left: 300px;
+    top: 100px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#back{
+    position: relative;
+    left: 850px;
+    top: 600px;
+}
+#back:hover{
+    cursor: pointer;
+}
+#rules:hover+#rule{
+    display: block;
+}
+@keyframes see
+{
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>黄金矿工</title>
+    <link rel="icon" href="img/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css.css" />
+
+</head>
+<body onload="onLoad()">
+<div id="start">
+    <canvas id="cvsstart" width="1200" height="700"></canvas>
+    <img src="img/title.png" height="200" width="700" id="title"/>
+    <img src="img/start.png" height="200" width="200" id="startbt"/>
+    <img src="img/rules.png" height="75" width="75" id="rules"/>
+    <div id="rule">
+        <h3 style="text-indent: 1em">黄金矿工游戏规则：</h3>
+        <p style="text-indent: 2em">玩家需要操纵画面上方的挖矿矿车,在合适的位置放下钩子抓取埋藏在地下的金矿。</p>
+        <p style="text-indent: 2em">游戏会有一个目标数额,玩家挖上来的金矿或是石头的价值将会累积,只要在倒计时到0之前达到这一数字即可过关。</p>
+        <p style="text-indent: 2em">不过要小心石头，既浪费时间又不值钱。</p>
+        <p style="text-indent: 2em">玩家通过“←”、“→”移动矿车，“↓”释放矿车的钩子。</p>
+        <p style="text-indent: 2em">“↑”释放炸弹，炸弹的作用可以将当前钩子上的黄金或者石头炸毁，炸弹最多有5枚。</p>
+    </div>
+</div>
+<div id="game">
+    <canvas id="cvs" height="700" width="1200"></canvas>
+</div>
+<div id="end">
+    <canvas id="cvsend" height="700" width="1200"></canvas>
+    <img src="img/back.png" height="100" width="100" id="back" onclick="reload()"/>
+</div>
+</body>
+<script type="text/javascript" src="start.js"></script>
+<script type="text/javascript" src="loading.js"></script>
+<script type="text/javascript" src="game.js"></script>
+</html>
